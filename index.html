@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+ 
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <a class="navbar-brand " href="#">Quiz</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+                       <!--- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>-->
+                    </div>
+                  </nav>
+                  <div class="container">
+                        <!-- Content here -->
+                        
+              <!---Content Start-->
+             
+            <div class="row">               
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <div id="timerheader" class="col-sm">
+            <button id="start">Start Quiz</button></div>
+            </div>
+           
+            <div class="row" id="questionsRow"> 
+
+              
+            </div>
+       
+
+  
+      
+                <!---End container--k
+            </div>
+            <nav class="navbar fixed-bottom navbar-light bg-dark">
+      </footer>
+      <a class="navbar-brand" href="#">copy right @</a>
+              </nav>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      
+
+    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+    <!-- Script -->
+<script type="text/javascript">
+window.onload = function() {
+$("#start").click(startRunningTime);
+};    var number = 10000;
+    var intervalId;
+    var startRunning = false;
+
+console.log("runnng?",startRunning);
+function startRunningTime(){
+    if(startRunning=true){
+    intervalId = setInterval(decrease, 1000);
+    console.log("intervalId",intervalId);
+///    console.log("start/clockRunning",startRunning());
+      
+}
+function decrease() {
+     number--;
+    $("#timerheader").html("<h2>" + number + "</h2>");
+     if (number === 0) {
+    stop();
+    alert("Time Up!");
+      }
+    }
+}  
+  console.log("start?",start);
+
+    $("#start").on("click",function() {
+      
+     
+        var questions = [
+        { n:1 ,q: "1. Cats are mainly nocturnal/crepuscular.", a: "t", w:"f" },
+{ n:2 ,q: "2. Cats see only in black and white.", a: "t", w:"f" },
+{ n:3 ,q: "3. Cats are carnivores.", a: "t", w:"f" },
+{ n:4 ,q: "4. Cats have whiskers on the backs of their front legs.", a: "t", w:"f" },
+{ n:5 ,q: "5. Cats have a better sense of smell than humans.", a: "t", w:"f" },
+{ n:6 ,q: "6. Cats with ringworm are infected with worms that form circular shapes underneath the surface of the skin.", a: "t", w:"f" },
+{ n:7 ,q: "7. It's normal for cats to regularly breathe through their mouths.", a: "t", w:"f" },
+{ n:8 ,q: "8. Cats have incredibly acute hearing.", a: "t", w:"f" },
+{ n:9 ,q: "9. Chocolate can be toxic to cats.", a: "t", w:"f" },
+{ n:10 ,q: "10. Cats use their whiskers to detect whether they'll be able to pass through an opening or not.", a: "t", w:"f" },
+{ n:11 ,q: "11. Picking cats up by the scruff and carrying them long distances is always the best method of restraining them.", a: "t", w:"f" },
+{ n:12 ,q: "12. Aspirin can be deadly for cats.", a: "t", w:"f" },
+{ n:13 ,q: "13. Short tails on cats are known as stud tails.", a: "t", w:"f" },
+{ n:14 ,q: "14. Cats can develop feline acne.", a: "t", w:"f" },
+{ n:15 ,q: "15. The feline AIDS virus is the same virus that causes AIDS in people.", a: "t", w:"f" },   ];
+
+    var score = 0;
+    var questionIndex = 0;
+    var qbutton = 'f'
+
+    function renderQuestion() {
+         for (var i = 0; i < questions.length; i++) {
+
+//$('#questionsRow').append('<div class="card-body col-sm"> Question :'+[i]+'</div>');
+
+$("#questionsRow").append('<div class="card-body col-sm" id="cell_'+i+'">'+'Question farts'+ +[i +1 ]+'<h5 class="card-title">' + questions[i].q+'</h5></div>');
+//$("#card-body").append(questions[i].a);
+
+ qbutton = $("<button>");
+qbutton.addClass("cat-btn");
+  qbutton.attr("data-name", questions[i]);
+  qbutton.text(questions[i].a);
+  $("#card-body").append(questions);
+  console.log("qbutton" ,questions[i].a);
+     
+//$('.cell_'+[i]).append('<p class="card-text">' + questions[i].q + '</p>');
+
+////console.log("cell ",cell_[i]);
+  console.log("poop" ,questions[i].q);
+       
+     }
+
+
+    
+      
+     /// renderQuestion2();
+  }
+  renderQuestion()
+    });
+     
+</script>
+
+
+    </body>
+</html>
